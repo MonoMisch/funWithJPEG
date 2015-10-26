@@ -1,5 +1,6 @@
-# funWithJPEG 
+# space-pegs
 
 have fun with jpeg encoding and decoding 
 
-dunno, maybe space pigs and zombies. 
+dunno, maybe **space pigs** and zombies. 
+

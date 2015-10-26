@@ -1,0 +1,15 @@
+
+# Logs
+logs
+*.log
+
+# node-modules
+node_modules
+
+# webstorm files
+.idea
+
+# ignore testoutput
+/test/*
+!/test/.gitkeep
+!/test/0.jpg

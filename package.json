@@ -1,0 +1,30 @@
+{
+  "name": "space-pegs",
+  "version": "0.0.0",
+  "description": "space pegs decode jpeg conture recognition",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MonoMisch/space-pegs.git"
+  },
+  "keywords": [
+    "jpeg",
+    "decoding",
+    "conture",
+    "edge",
+    "recognition"
+  ],
+  "author": "monomisch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MonoMisch/space-pegs/issues"
+  },
+  "homepage": "https://github.com/MonoMisch/space-pegs#readme",
+  "dependencies": {
+    "bluebird": "^2.10.2",
+    "jpeg-js": "^0.1.1"
+  }
+}
