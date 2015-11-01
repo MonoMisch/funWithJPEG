@@ -10,6 +10,5 @@ node_modules
 .idea
 
 # ignore testoutput
-/test/*
-!/test/.gitkeep
-!/test/0.jpg
+/test/destination/*
+!/test/destination/.gitkeep

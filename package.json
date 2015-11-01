@@ -25,6 +25,7 @@
   "homepage": "https://github.com/MonoMisch/space-pegs#readme",
   "dependencies": {
     "bluebird": "^2.10.2",
-    "jpeg-js": "^0.1.1"
+    "jpeg-js": "^0.1.1",
+    "lodash": "^3.10.1"
   }
 }
