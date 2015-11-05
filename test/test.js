@@ -30,8 +30,18 @@ piggy.swipswap2()
         return peggy1.decode(sourcePath);
     })
     .then(console.log)
-
-
+    .then( function() {
+        return peggy1.diff2Points([0,0,0,0], [10, 10, 10, 5])
+    })
+    .then(console.log)
+    .then( function() {
+        return peggy1.detectEdge(1, 1);
+    })
+    .then(console.log)
+    .then( function() {
+        return peggy1.detectEdge(2, 2);
+    })
+    .then(console.log)
     .catch(console.error)
     .finally( function(){
         console.log("test of space-pegs executed");

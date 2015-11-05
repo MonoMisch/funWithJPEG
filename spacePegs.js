@@ -16,6 +16,7 @@ var jpeg = Promise.promisifyAll(require('jpeg-js'));
 function SpacePegs () {
 
     this.decoded;
+    this.decodedBuffer;
     this.width;
     this.height;
 
@@ -30,6 +31,7 @@ SpacePegs.prototype.decode = function (source) {
         })
         .then( function(jpegImageData){
             this.decoded = _.chunk(jpegImageData.data, 4);
+            this.decodedBuffer = jpegImageData.data;
             this.width = jpegImageData.width;
             this.height = jpegImageData.height;
         })
@@ -37,8 +39,19 @@ SpacePegs.prototype.decode = function (source) {
 };
 
 
-SpacePegs.prototype.diffAllValues = function (pixel1, pixel2) {
+SpacePegs.prototype.diff2Points = function (pixel1, pixel2) {
+    var sum = 0;
+    pixel1.forEach( function( value, i){
+        sum += Math.abs( value - pixel2[i] );
+    });
+    return sum;
+};
 
+
+SpacePegs.prototype.detectEdge = function (startX, startY) {
+    var pos0 = startY * this.height + startX;
+
+    return this.decoded[pos0];
 };
 
 
